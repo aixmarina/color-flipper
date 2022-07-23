@@ -1,0 +1,129 @@
+// font
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+// variables
+
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+$color-white: #fff;
+$color-black: #222;
+$color-primary-1: hsl(205, 78%, 60%);
+
+$spacing: 0.1rem;
+$radius: 0.25rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    background-color: hsl(210, 36%, 96%);
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    letter-spacing: $spacing;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: $font-secondary;
+}
+
+nav {
+    background: $color-white;
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    .nav-center {
+        width: 90vw;
+        max-width: 620px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            margin-bottom: 0;
+            color: $color-primary-1;
+            font-size: 0.875rem;
+        }
+
+        .nav-links {
+            display: flex;
+
+            a {
+                text-transform: capitalize;
+                font-weight: 700;
+                font-size: 1rem;
+                color: hsl(205, 86%, 17%);
+                letter-spacing: $spacing;
+                margin-left: 1rem;
+
+                &:hover {
+                    color: $color-primary-1;
+                }
+            }
+        }
+    }
+}
+
+main {
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+
+    .container {
+        text-align: center;
+
+        h2 {
+            background: $color-black;
+            color: $color-white;
+            padding: 1rem;
+            border-radius: $radius;
+            margin-bottom: 2.5rem;
+
+            .color {
+                color: $color-primary-1;
+            }
+        }
+
+        .btn-main {
+            font-family: $font-secondary;
+            text-transform: uppercase;
+            background: transparent;
+            color: $color-black;
+            letter-spacing: $spacing;
+            display: inline-block;
+            font-weight: 700;
+            transition: all 0.3s linear;
+            border: 2px solid $color-black;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            border-radius: $radius;
+            font-size: 1rem;
+            padding: 0.75rem 1.25rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $color-white;
+                background: $color-black;
+            }
+        }
+    }
+}
