@@ -60,6 +60,8 @@ nav .nav-center .nav-links a {
   color: hsl(205deg, 86%, 17%);
   letter-spacing: 0.1rem;
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 nav .nav-center .nav-links a:hover {
   color: hsl(205deg, 78%, 60%);

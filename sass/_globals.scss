@@ -75,6 +75,8 @@ nav {
                 color: hsl(205, 86%, 17%);
                 letter-spacing: $spacing;
                 margin-left: 1rem;
+                display: flex;
+                align-items: center;
 
                 &:hover {
                     color: $color-primary-1;
